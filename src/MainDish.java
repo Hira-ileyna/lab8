@@ -6,6 +6,11 @@ public class MainDish extends Food{
     }
     @Override
     public void describe(){
-        System.out.println("Main Dish name: " + this.name + " price: " + this.price + " spicy: " + this.spicy);
+        System.out.print("Main Dish: " + getInfo() );
+        if(spicy){
+            System.out.println(" (Spicy) ");
+        }else {
+            System.out.println(" (Not Spicy) ");
+        }
     }
 }

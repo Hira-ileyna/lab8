@@ -6,7 +6,12 @@ public class Dessert extends Food{
     }
     @Override
     public void describe(){
-        System.out.println("Dessert name: " + this.name + " price: " + this.price + " contains sugar: " + this.containsSugar);
+        System.out.print("Dessert: " + getInfo());
+        if(containsSugar){
+            System.out.println(" (With sugar) ");
+        }else  {
+            System.out.println(" (Sugar Free) ");
+        }
     }
 
 }

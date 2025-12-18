@@ -7,6 +7,11 @@ public class Drink extends Food {
 
     @Override
     public void describe(){
-        System.out.println("Drink name: " + this.name + " price: " + this.price + " cold: " + this.cold);
+        System.out.print("Drink: " +getInfo() );
+        if(cold){
+            System.out.println(" (served cold) ");
+        }else  {
+            System.out.println(" (served hot) ");
+        }
     }
 }

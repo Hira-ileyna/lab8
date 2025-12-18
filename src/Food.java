@@ -7,9 +7,9 @@ public class Food {
         this.price = price;
     }
     public String getInfo(){
-        return this.name;
+        return name + " - " + price + " TL";
     }
     public void describe(){
-        System.out.println("Food name: " + this.name + " price: " + this.price);
+        System.out.println("This is a food item: " + getInfo());
     }
 }
