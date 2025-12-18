@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Orange a = new Orange("Orange", 25.4, 56,68);
+        Orange a = new Orange("Orange", 25.4, 56.4,68);
         a.describe();
     }
 }
